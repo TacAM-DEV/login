@@ -13,19 +13,19 @@
 		<form action="#">
             <h1>Create Account</h1>
             <br>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
+			<input type="text" placeholder="Name" ng-model="name" />
+			<input type="email" placeholder="Email" ng-model="email" />
+			<input type="password" placeholder="Password" ng-model="password" />
+			<button ng-click="signup()">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
 		<form action="#">
 			<h1>Sign in</h1>
 			<br>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
+			<input type="email" placeholder="Email" ng-model="email" />
+			<input type="password" placeholder="Password" ng-model="password" />
+			<a ng-click="forgotPassword()" style="cursor: pointer;">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>
 	</div>
